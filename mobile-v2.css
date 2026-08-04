@@ -2,12 +2,12 @@
 @media (max-width:760px){
   body{min-width:320px;overflow-x:hidden}
   .topbar{height:82px;padding:8px 14px}.brand{transform:none!important;max-width:220px;padding:5px 14px 7px}.brand span{font-size:14px}.brand strong{font-size:20px}.brand small{display:none}.round-btn{width:46px;height:46px}.toolbar{gap:7px;margin:0!important}
-  #homeScreen .map{min-height:1420px;height:1420px;margin:0;border-radius:0 0 24px 24px;background-position:center}
+  #homeScreen{padding-bottom:78px}#homeScreen .map{min-height:1580px;height:1580px;margin:0;border-radius:0 0 24px 24px;background-position:center}
   #homeScreen .how-card{display:none}.route-line{display:none}
   #homeScreen .adventure-card{width:min(86vw,340px);left:50%;transform:translateX(-50%);border-radius:20px}.adventure-card .mission-banner{font-size:13px;padding:7px}.mission-art{height:138px}.adventure-card h2{font-size:22px}.adventure-card .game-type{font-size:11px}.adventure-card p{min-height:auto;font-size:11px;line-height:1.3}.adventure-card .grammar{min-height:auto;font-size:10px;padding-bottom:4px}.card-actions button{min-height:44px;font-size:11px}
   #homeScreen .map-card-one{top:2%}#homeScreen .map-card-two{top:29%}#homeScreen .map-card-three{top:56%}
   #homeScreen .route-step{left:11%;width:42px;height:42px;font-size:23px}.route-step.one{top:22%}.route-step.two{top:49%}.route-step.three{top:76%}
-  #homeScreen .finish-card{top:83%;right:auto;bottom:auto;left:50%;width:min(82vw,320px);transform:translateX(-50%);padding:13px}.finish-card:before{font-size:13px}.finish-card p{font-size:10px}.finish-card button{min-height:44px;font-size:11px}
+  #homeScreen .finish-card{top:80%;right:auto;bottom:auto;left:50%;width:min(82vw,320px);transform:translateX(-50%);padding:13px}.finish-card:before{font-size:13px}.finish-card p{font-size:10px}.finish-card button{min-height:44px;font-size:11px}
   .welcome{left:102px!important;bottom:83px!important;width:170px;font-size:10px}.welcome:before{left:-112px!important;width:146px!important;height:190px!important}
   .progress-bar{width:100%;height:64px;border-width:3px;border-radius:15px 15px 0 0;justify-content:space-evenly}.progress-bar>div{min-width:0;width:27%;font-size:14px}.progress{width:31%!important}.progress span{width:62px;margin:0 2px}.restart-adventure{min-width:66px;padding:7px 5px;font-size:10px}.restart-adventure small{font-size:7px}
   .game-screen{padding:0 8px 76px}.game-head{padding:10px 4px 7px}.back-btn{min-height:44px;padding:9px 12px}.star-count{font-size:18px}.mission-stage{width:100%;min-height:0;margin:6px auto;padding:16px 10px;border-width:3px;border-radius:22px}.mission-stage h1{font-size:31px}.mission-stage .lead{font-size:14px;line-height:1.3}.speaker{width:44px;height:44px}
