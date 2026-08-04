@@ -31,4 +31,5 @@
   .story-target.animal-picked:after{display:none!important}
   .story-meadow.choose-animal .pronoun-choices{opacity:0;pointer-events:none;transform:translateY(95px);transition:opacity .25s,transform .25s}
   .story-meadow.choose-animal .story-tip{bottom:9px}
+  .story-meadow .pronoun-choice span{height:55px!important;transform:translateY(-7px);background-position:center!important}
 }
