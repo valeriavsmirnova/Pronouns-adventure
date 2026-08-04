@@ -16,3 +16,13 @@
   .game-screen:has(.story-meadow) .mission-stage{padding:9px 5px;overflow:hidden}.story-status{width:98%;font-size:13px}.story-status button{min-height:38px}.story-meadow{height:460px;border-radius:18px;background-color:#74a947!important;background-size:100% auto!important;background-position:center 210px!important;background-repeat:no-repeat!important}.story-sentence{top:10px;width:94%;padding:10px 8px;border-radius:18px}.story-sentence p{font-size:15px;line-height:1.2}.story-result.show{max-height:82px;margin-top:6px}.story-person{width:62px;height:68px}.story-result .story-animal{width:70px;height:70px}.story-meadow .pronoun-choices{right:4px;bottom:8px;left:4px;display:flex;flex-direction:row;justify-content:center;gap:4px;transform:none}.story-meadow .pronoun-choice{width:55px;height:72px;flex:0 0 55px}.story-meadow .pronoun-choice span{height:55px}.story-meadow .pronoun-choice b{font-size:11px}.story-tip{bottom:85px;font-size:9px;padding:5px 9px}.story-meadow.choose-animal .story-target{width:15%;height:12%}.story-target.monkey,.story-target.elephant,.story-target.giraffe{top:58%!important}.story-target.rabbit,.story-target.tiger,.story-target.frog{top:65%!important}.story-target.zebra,.story-target.cat,.story-target.lion,.story-target.dog{top:71%!important}.story-meadow.choose-animal .story-target:after{font-size:9px;padding:1px 5px}
   button,.pronoun-choice,.owner-card,.memory-card,.story-target{touch-action:manipulation}
 }
+
+@media (max-width:760px){
+  .story-meadow{height:460px!important;background-image:url('assets/animal-meadow-mobile-v1.png')!important;background-size:cover!important;background-position:center!important;background-color:#6ca644!important}
+  .story-meadow.choose-animal .story-target{width:17%;height:14%}
+  .story-target.monkey,.story-target.elephant,.story-target.giraffe{top:53%!important}
+  .story-target.rabbit,.story-target.tiger,.story-target.frog{top:68%!important}
+  .story-target.zebra,.story-target.cat,.story-target.lion,.story-target.dog{top:83%!important}
+  .story-meadow.choose-animal .pronoun-choices{opacity:0;pointer-events:none;transform:translateY(95px);transition:opacity .25s,transform .25s}
+  .story-meadow.choose-animal .story-tip{bottom:9px}
+}
