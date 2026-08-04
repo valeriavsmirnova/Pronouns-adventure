@@ -18,15 +18,17 @@
 }
 
 @media (max-width:760px){
-  .story-meadow{height:460px!important;background-image:url('assets/animal-meadow-mobile-v1.png')!important;background-size:cover!important;background-position:center!important;background-color:#6ca644!important}
-  .story-meadow.choose-animal .story-target{width:14%;height:10%;background:radial-gradient(circle,#fff6a00d 40%,transparent 72%);box-shadow:0 0 0 2px #fff5aed9,0 0 10px #bf78ff}
+  .story-meadow{height:460px!important;background-image:url('assets/animal-meadow-mobile-v1.png')!important;background-size:cover!important;background-position:center -34px!important;background-color:#6ca644!important}
+  .story-meadow.choose-animal .story-target{width:14%;height:10%;background:transparent!important;box-shadow:none!important}
   .story-meadow.choose-animal .story-target:after{display:none}
   .story-target.monkey{left:18%!important}.story-target.elephant{left:49%!important}.story-target.giraffe{left:80%!important}
   .story-target.rabbit{left:15%!important}.story-target.tiger{left:43%!important}.story-target.frog{left:75%!important}
   .story-target.zebra{left:18%!important}.story-target.cat{left:45%!important}.story-target.lion{left:70%!important}.story-target.dog{left:89%!important}
-  .story-target.monkey,.story-target.elephant,.story-target.giraffe{top:53%!important}
-  .story-target.rabbit,.story-target.tiger,.story-target.frog{top:68%!important}
-  .story-target.zebra,.story-target.cat,.story-target.lion,.story-target.dog{top:83%!important}
+  .story-target.monkey,.story-target.elephant,.story-target.giraffe{top:46%!important}
+  .story-target.rabbit,.story-target.tiger,.story-target.frog{top:61%!important}
+  .story-target.zebra,.story-target.cat,.story-target.lion,.story-target.dog{top:76%!important}
+  .story-target.animal-picked{background:transparent!important;box-shadow:none!important}
+  .story-target.animal-picked:after{display:none!important}
   .story-meadow.choose-animal .pronoun-choices{opacity:0;pointer-events:none;transform:translateY(95px);transition:opacity .25s,transform .25s}
   .story-meadow.choose-animal .story-tip{bottom:9px}
 }
