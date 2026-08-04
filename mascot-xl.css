@@ -1,0 +1,2 @@
+/* Larger explorer, anchored into the lower-left corner. */
+.welcome:before{left:-208px;bottom:-133px;width:246px;height:318px}@media(max-width:760px){.welcome:before{left:-126px;bottom:-94px;width:184px;height:237px}}

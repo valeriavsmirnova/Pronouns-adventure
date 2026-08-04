@@ -1,0 +1,2 @@
+/* Seat the explorer mascot on the lower reward tray. */
+.welcome:before{bottom:-92px;z-index:2}@media(max-width:760px){.welcome:before{bottom:-70px}}

@@ -1,0 +1,2 @@
+/* Reliable card reveal: avoids browser-specific 3D backface glitches. */
+.memory-card.open,.memory-card.matched{transform:none}.memory-card .front{z-index:1;visibility:hidden;transform:none;backface-visibility:visible}.memory-card .back{z-index:2;visibility:visible;transform:none;backface-visibility:visible}.memory-card.open .front,.memory-card.matched .front{visibility:visible}.memory-card.open .back,.memory-card.matched .back{visibility:hidden}

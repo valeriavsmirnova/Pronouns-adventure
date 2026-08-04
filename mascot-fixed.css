@@ -1,0 +1,2 @@
+/* The explorer and speech bubble stay seated on the reward tray while the map scrolls. */
+.welcome{position:fixed;z-index:11;left:max(210px,calc(50% - 535px));bottom:126px}.welcome:before{z-index:2;left:-188px;bottom:-70px;width:208px;height:270px}@media(max-width:760px){.welcome{left:112px;bottom:94px}.welcome:before{left:-125px;bottom:-47px;width:160px;height:205px}}

@@ -1,0 +1,2 @@
+/* Lift the route above the progress tray while keeping a clear stepped journey. */
+.map-card-one{top:10%}.map-card-two{top:19%}.map-card-three{top:28%}.route-step.one{top:14%}.route-step.two{top:22%}.route-step.three{top:30%}.finish-card{top:47%;bottom:auto}.welcome{bottom:58px}@media(max-width:760px){.map-card-one{top:8%}.map-card-two{top:35%}.map-card-three{top:62%}.route-step.one{top:19%}.route-step.two{top:46%}.route-step.three{top:73%}.finish-card{top:auto;bottom:7%}}

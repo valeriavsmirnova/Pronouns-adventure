@@ -1,0 +1,24 @@
+/* Mission 3 — Whose Animal Is This? */
+(() => {
+  const rounds=[
+    ['his','His animal is white and can hop.','rabbit'],['her','Her animal is big, grey and has got a long nose.','elephant'],
+    ['their','Their animal is orange with black stripes.','tiger'],['its','Its animal is small, green and can jump.','frog'],
+    ['our','Our animal is black and white and has got stripes.','zebra']
+  ];
+  const targets=[['elephant',62,25],['tiger',72,48],['zebra',53,72],['rabbit',43,49],['frog',92,51],['monkey',48,29],['dog',92,73],['cat',65,59],['giraffe',90,24],['lion',76,76]];
+  let level=0, drawing=null, fixed=[];
+  const keepMagicLines=new MutationObserver(()=>document.querySelectorAll('.magic-line.fixed:not([data-saved])').forEach(line=>{line.dataset.saved='true';fixed.push(line.outerHTML)}));
+  keepMagicLines.observe(document.body,{subtree:true,attributes:true,attributeFilter:['class']});
+  const instruction=()=>speak('Read the description. Look at the first word. Find the correct animal. Draw the magic line. Earn stars!');
+  function instructions(){document.getElementById('modalContent').innerHTML='<h2>Instructions</h2><ol><li>Read the description.</li><li>Look at the first word.</li><li>Find the correct animal.</li><li>Draw the magic line.</li><li>Earn stars!</li></ol><button class="listen-btn" id="animalInstructionRead">Listen to instructions</button>';document.getElementById('modal').hidden=false;document.getElementById('animalInstructionRead').onclick=instruction}
+  function path(s,e){const mx=(s.x+e.x)/2, my=(s.y+e.y)/2-35;return `M ${s.x} ${s.y} Q ${mx} ${my} ${e.x} ${e.y}`}
+  function render(){const q=rounds[level];common('Whose Animal Is This?','Read the description and draw a line to match each person with their animal!',`<div class="animal-status"><button class="animal-instructions">Instructions</button><span class="animal-stars">${[0,1,2].map(i=>`<i class="${state.roundStars>i?'on':''}">★</i>`).join('')}</span><b>${level+1} / 5</b></div><div class="animal-board"><svg class="magic-lines" viewBox="0 0 1000 620" preserveAspectRatio="none">${fixed.join('')}</svg><div class="animal-cards">${rounds.map((r,i)=>`<button class="animal-clue ${i===level?'active':''}" data-clue="${i}"><b>${r[0][0].toUpperCase()+r[0].slice(1)}</b> ${r[1].slice(r[0].length+1)}</button>`).join('')}</div>${targets.map(t=>`<button class="animal-target ${t[0]}" data-animal="${t[0]}" style="left:${t[1]}%;top:${t[2]}%" aria-label="${t[0]}"></button>`).join('')}<div class="animal-hint">Read. Think. Draw the magic line!</div></div>`);
+    document.querySelector('.magic-lines').insertAdjacentHTML('afterbegin','<defs><linearGradient id="magic-gradient"><stop stop-color="#c47bff"/><stop offset=".5" stop-color="#fff0a2"/><stop offset="1" stop-color="#84edff"/></linearGradient></defs>');document.querySelector('.animal-instructions').onclick=instructions;document.querySelector('.speaker').onclick=()=>speak(q[1]);
+    document.querySelector('.animal-clue.active').addEventListener('pointerdown',start);speak(q[1]);
+  }
+  function coords(evt){const r=document.querySelector('.animal-board').getBoundingClientRect();return{x:(evt.clientX-r.left)/r.width*1000,y:(evt.clientY-r.top)/r.height*620}}
+  function start(evt){evt.preventDefault();const p=coords(evt);drawing={start:p,path:document.createElementNS('http://www.w3.org/2000/svg','path')};drawing.path.setAttribute('class','magic-line live');drawing.path.setAttribute('d',path(p,p));document.querySelector('.magic-lines').append(drawing.path);document.addEventListener('pointermove',move);document.addEventListener('pointerup',end,{once:true});sound('click')}
+  function move(evt){if(!drawing)return;drawing.path.setAttribute('d',path(drawing.start,coords(evt)))}
+  function end(evt){document.removeEventListener('pointermove',move);if(!drawing)return;const target=document.elementFromPoint(evt.clientX,evt.clientY)?.closest('.animal-target');const q=rounds[level],line=drawing.path;drawing=null;if(target&&target.dataset.animal===q[2]){const r=document.querySelector('.animal-board').getBoundingClientRect(),tr=target.getBoundingClientRect(),endp={x:(tr.left+tr.width/2-r.left)/r.width*1000,y:(tr.top+tr.height/2-r.top)/r.height*620};line.setAttribute('d',path({x:line.getPointAtLength(0).x,y:line.getPointAtLength(0).y},endp));line.classList.remove('live');line.classList.add('fixed');target.classList.add('celebrate');sound('good');state.roundStars=Math.min(3,state.roundStars+1);document.getElementById('roundStars').textContent=state.roundStars;setTimeout(()=>{level++;if(level===rounds.length){state.round=3;finish()}else render()},850)}else{line.classList.add('wrong');sound('bad');setTimeout(()=>line.remove(),520)}}
+  renderPets=()=>{level=0;fixed=[];render();dots(5)};games.pet.title='Whose Animal Is This?';document.getElementById('helpBtn').onclick=()=>state.mission==='pet'&&instructions();
+})();

@@ -1,0 +1,7 @@
+/* Premium illustrated reward state. */
+.game-screen .mission-stage:has(.memory-board-v2) .lead{display:none}
+.mission-stage .result-victory{width:min(560px,100%);margin:25px auto 0;padding:12px 30px 28px;overflow:hidden;border:3px solid #fff7cd;border-radius:30px;background:linear-gradient(145deg,#fffbe9 0%,#fff0b6 100%);box-shadow:inset 0 2px 0 #fff,0 14px 25px #8053222e}
+.result-victory .victory-art{display:block;width:min(330px,75vw);height:176px;margin:-12px auto -4px;object-fit:contain;filter:drop-shadow(0 10px 8px #8b5d2638);animation:victory-bob 2.8s ease-in-out infinite}
+.result-victory h2{margin:2px 0 8px;color:#7046ac;font:800 30px/1 'Baloo 2',sans-serif;text-shadow:0 2px 0 #fff8df}
+.result-victory p{margin:0 0 20px;font-size:17px;font-weight:800}.result-victory .next-btn{min-width:205px;padding:12px 23px;border:2px solid #f4ffc9}@keyframes victory-bob{50%{transform:translateY(-6px) rotate(-1deg)}}@media(max-width:600px){.mission-stage .result-victory{padding:8px 15px 22px}.result-victory .victory-art{height:145px}.result-victory h2{font-size:26px}}
+.certificate{text-align:center;padding:12px 8px}.certificate>span{color:#7d56b0;font-size:12px;font-weight:900;letter-spacing:.12em}.certificate h2{margin:8px 0;color:#7046ac}.certificate b{display:block;margin-top:13px;font:800 23px 'Baloo 2';color:#7c4b2f}.certificate-stars{margin-top:14px;color:#efb534;font-size:32px;letter-spacing:7px;text-shadow:0 2px #a66e24}

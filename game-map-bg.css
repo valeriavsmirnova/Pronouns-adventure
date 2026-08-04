@@ -1,0 +1,2 @@
+/* Keep the Adventure Park world visible behind every mission. */
+.game-screen{background:transparent!important}.game-screen:before{content:"";position:fixed;z-index:-1;inset:0;background:linear-gradient(#183f5b18,#183f5b18);pointer-events:none}.mission-stage{background:linear-gradient(145deg,#fffdf5eF,#fff5d8f2)}

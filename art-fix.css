@@ -1,0 +1,2 @@
+/* Keep the portrait mission illustrations at their natural proportions. */
+.adventure-card .mission-art{height:116px;background-color:#d9f3f4;background-size:contain;background-position:center;background-repeat:no-repeat}.one .mission-art{background-image:url('assets/memory-art.png')}.two .mission-art{background-image:url('assets/dress-art.png')}.three .mission-art{background-image:url('assets/pets-art.png')}@media(max-width:760px){.adventure-card .mission-art{height:108px}}

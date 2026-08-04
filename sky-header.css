@@ -1,0 +1,2 @@
+/* The header uses the same illustrated world as the map, focused on its sky. */
+body{background-color:#65c8ed;background-image:url('assets/adventure-map-v1.png');background-size:100% auto;background-position:center top;background-repeat:no-repeat;background-attachment:fixed}.topbar{max-width:none;margin:0;background:transparent;box-shadow:none}.map{background:transparent!important;box-shadow:none}.bird,.topbar:after{display:none!important}@media(max-width:760px){body{background-size:auto 900px;background-position:center top}}

@@ -1,0 +1,3 @@
+/* A clear speech tail aimed at the fox explorer rather than a generic tooltip pointer. */
+.welcome{left:max(150px,calc(50% - 690px));width:174px;padding:10px 12px 11px;font-size:10px}.welcome:after{left:-29px;bottom:-23px;width:50px;height:33px;border:0;background:linear-gradient(145deg,#fffdf0,#f5e4b5);clip-path:polygon(57% 0,100% 0,100% 22%,0 100%);filter:drop-shadow(-3px 4px #728b80)}@media(max-width:760px){.welcome{left:82px;width:155px;font-size:9px}.welcome:after{left:-25px;width:48px;height:32px;bottom:-22px}}
+.welcome.fox-speaking{animation:fox-greeting .9s ease both}@keyframes fox-greeting{0%{transform:scale(.92);filter:brightness(1)}35%{transform:scale(1.06);filter:brightness(1.08)}100%{transform:scale(1);filter:brightness(1)}}

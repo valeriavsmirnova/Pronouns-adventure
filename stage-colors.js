@@ -1,0 +1,1 @@
+(() => { const finish = document.querySelector('.finish-card'); if (finish && !document.querySelector('.route-step.four')) finish.insertAdjacentHTML('beforebegin', '<span class="route-step four">4</span>'); })();
