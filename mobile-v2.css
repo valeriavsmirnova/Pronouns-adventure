@@ -33,6 +33,6 @@
   .story-meadow.choose-animal .story-tip{bottom:9px}
   .story-meadow .pronoun-choice span{height:55px!important;transform:translateY(-14px);background-position:center!important}
   /* Use the same framed portrait crop as Mission 2 for the they card. */
-  .story-meadow .pronoun-choice span.they{height:55px!important;transform:translateY(-14px)!important;background-image:url('assets/dress-owners-v2.png')!important;background-size:200% 200%!important;background-position:0 100%!important;background-repeat:no-repeat!important}
+  .story-meadow .pronoun-choice span.they{height:55px!important;transform:translateY(9px)!important;background-image:url('assets/dress-owners-v2.png')!important;background-size:200% 200%!important;background-position:0 100%!important;background-repeat:no-repeat!important}
   .story-meadow .pronoun-choice b{bottom:2px!important}
 }
