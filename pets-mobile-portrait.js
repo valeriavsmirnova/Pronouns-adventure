@@ -9,16 +9,12 @@
       card.style.setProperty('transform', 'none', 'important');
       card.style.setProperty('z-index', 'auto', 'important');
       card.style.setProperty('margin', '0', 'important');
-      if (!card.querySelector('.mobile-story-they-label')) {
-        const label = document.createElement('span');
-        label.className = 'mobile-story-they-label';
-        label.textContent = 'they';
-        Object.assign(label.style, {
-          position: 'absolute', zIndex: '20', bottom: '2px', left: '50%',
-          transform: 'translateX(-50%)', padding: '0 6px', borderRadius: '99px',
-          background: '#7548b1', color: '#fff', font: "800 11px 'Baloo 2'", lineHeight: '18px'
-        });
-        card.append(label);
+      const nativeLabel = card.querySelector('b');
+      if (nativeLabel) {
+        nativeLabel.textContent = 'they';
+        nativeLabel.style.setProperty('display', 'block', 'important');
+        nativeLabel.style.setProperty('z-index', '100', 'important');
+        nativeLabel.style.setProperty('bottom', '2px', 'important');
       }
       if (slot.querySelector('.mobile-story-they')) return;
       const image = document.createElement('img');
