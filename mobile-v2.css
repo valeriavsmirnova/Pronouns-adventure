@@ -40,8 +40,9 @@
   .story-meadow.choose-animal .story-tip{bottom:9px}
   .story-meadow .pronoun-choice span{height:55px!important;transform:translateY(-14px);background-position:center!important}
   /* Use the same framed portrait crop as Mission 2 for the they card. */
-  .story-meadow .pronoun-choice span.they{position:relative;z-index:1;height:55px!important;transform:translateY(9px)!important;background-image:url('assets/owner-they-v3.png')!important;background-size:contain!important;background-position:center!important;background-repeat:no-repeat!important}
+  .story-meadow .pronoun-choice span.they{position:relative;z-index:1;height:55px!important;transform:translateY(9px)!important;background:none!important}
   .story-meadow .mobile-story-they{display:none!important}
+  .story-meadow .mobile-story-they-image{display:block!important;width:100%!important;height:100%!important;object-fit:contain!important;object-position:center!important}
   .story-meadow .pronoun-choice[data-choice="they"]{position:relative!important;top:0!important;transform:none!important;z-index:auto}
   .story-meadow .pronoun-choice b{display:block!important;z-index:5!important;bottom:2px!important}
   .story-meadow .pronoun-choice[data-choice="they"]:before{content:'they'!important;position:absolute!important;z-index:100!important;bottom:2px!important;left:50%!important;display:block!important;padding:0 6px!important;transform:translateX(-50%)!important;border-radius:99px!important;background:#7548b1!important;color:#fff!important;font:800 11px 'Baloo 2'!important;line-height:18px!important;pointer-events:none}
