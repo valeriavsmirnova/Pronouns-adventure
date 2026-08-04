@@ -46,4 +46,5 @@
   .story-meadow .pronoun-choice b{bottom:2px!important}
   .story-meadow .pronoun-choices{align-items:flex-end!important}
   .story-meadow .pronoun-choice{align-self:flex-end!important;margin:0!important;top:0!important;transform:none!important}
+  .story-meadow .pronoun-choice.story-correct{animation:none!important;transform:none!important}
 }
