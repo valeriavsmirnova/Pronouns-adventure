@@ -32,6 +32,6 @@
   .story-meadow.choose-animal .pronoun-choices{opacity:0;pointer-events:none;transform:translateY(95px);transition:opacity .25s,transform .25s}
   .story-meadow.choose-animal .story-tip{bottom:9px}
   .story-meadow .pronoun-choice span{height:55px!important;transform:translateY(-14px);background-position:center!important}
-  .story-meadow .pronoun-choice span.they{transform:translateY(-17px) scale(.82);transform-origin:center top}
+  .story-meadow .pronoun-choice span.they{height:45px!important;transform:translateY(-5px)!important;background-size:45px 45px!important;background-position:center top!important}
   .story-meadow .pronoun-choice b{bottom:2px!important}
 }
