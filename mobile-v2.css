@@ -40,13 +40,13 @@
   .story-meadow.choose-animal .story-tip{bottom:9px}
   .story-meadow .pronoun-choice span{height:55px!important;transform:translateY(-14px);background-position:center!important}
   /* Use the same framed portrait crop as Mission 2 for the they card. */
-  .story-meadow .pronoun-choice span.they{position:relative;z-index:1;height:55px!important;transform:translateY(9px)!important;background:none!important}
+  .story-meadow .pronoun-choice span.they{position:relative;z-index:1;height:55px!important;transform:translateY(9px)!important;background-image:url('assets/dress-owners-v2.png')!important;background-size:200% 200%!important;background-position:0 100%!important;background-repeat:no-repeat!important}
   .story-meadow .mobile-story-they{display:none!important}
   .story-meadow .mobile-story-they-image{display:block!important;width:100%!important;height:100%!important;object-fit:contain!important;object-position:center!important}
   .story-meadow .pronoun-choice[data-choice="they"]{position:relative!important;top:0!important;transform:none!important;z-index:auto}
   .story-meadow .pronoun-choice b{display:block!important;z-index:5!important;bottom:2px!important}
   .story-meadow .pronoun-choice[data-choice="they"]:before{content:'they'!important;position:absolute!important;z-index:100!important;bottom:2px!important;left:50%!important;display:block!important;padding:0 6px!important;transform:translateX(-50%)!important;border-radius:99px!important;background:#7548b1!important;color:#fff!important;font:800 11px 'Baloo 2'!important;line-height:18px!important;pointer-events:none}
-  .story-meadow .pronoun-choice[data-choice="they"]:after{content:''!important;position:absolute!important;z-index:3!important;top:3px!important;right:3px!important;bottom:20px!important;left:3px!important;display:block!important;background-image:url('assets/dress-owners-v2.png')!important;background-size:200% 200%!important;background-position:0 100%!important;background-repeat:no-repeat!important;pointer-events:none}
+  .story-meadow .pronoun-choice[data-choice="they"]:after{content:none!important}
   .story-meadow .pronoun-choices{align-items:flex-end!important}
   .story-meadow .pronoun-choice{align-self:flex-end!important;margin:0!important;top:0!important;transform:none!important}
   .story-meadow .pronoun-choice.story-correct{animation:none!important;transform:none!important}
