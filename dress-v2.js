@@ -18,6 +18,11 @@
   function render(){
     const item=order[step];
     common('Dress the Character!','The clothes show who it belongs to. Tap the right person or character!',`<div class="wardrobe-status"><button class="wardrobe-instructions">Instructions</button><span class="wardrobe-stars" aria-label="stars"><i class="${state.roundStars>0?'on':''}">★</i><i class="${state.roundStars>1?'on':''}">★</i><i class="${state.roundStars>2?'on':''}">★</i></span><b>${step+1} / 15</b></div><div class="wardrobe-game"><div class="wardrobe-item" data-word="${item[1]}" aria-label="${item[1]}"><span class="clothing-illustration" style="--col:${item[4]};--row:${item[5]}"></span><strong>${item[1]}</strong></div><div class="wardrobe-sparkles"><i></i><i></i><i></i></div><div class="owner-row">${owners.map(o=>`<button class="owner-card ${o.cls}" data-owner="${o.id}"><span class="owner-portrait ${o.portrait||''}" style="${o.portrait?'':`background-position:${o.pos}`}"></span><b>${o.name}</b></button>`).join('')}</div></div>`);
+    const portraitFiles={boy:'owner-he-v1.png',girl:'owner-she-v1.png',monster:'owner-it-v1.png'};
+    document.querySelectorAll('.owner-card').forEach(card=>{
+      const src=portraitFiles[[...card.classList].find(name=>portraitFiles[name])];
+      if(src){const portrait=card.querySelector('.owner-portrait');portrait.insertAdjacentHTML('beforeend',`<img class="mobile-owner-art" src="assets/${src}" alt="">`)}
+    });
     document.querySelector('.wardrobe-instructions').onclick=showInstructions;
     document.querySelector('.speaker').onclick=()=>speak(item[1]);
     document.querySelectorAll('.owner-card').forEach(card=>card.onclick=()=>choose(card,item));

@@ -4,3 +4,4 @@
 .wardrobe-game .wardrobe-item strong{position:absolute;z-index:2;top:82px;font:900 39px 'Baloo 2';color:#fff8cf;text-shadow:0 3px 3px #493222}
 .wardrobe-game .clothing-illustration{position:absolute;width:86%;height:100%;background-image:url('assets/dress-items-v2.png');background-size:700% 300%;background-position:calc(var(--col)*16.6667%) calc(var(--row)*50%);background-repeat:no-repeat}
 .owner-portrait.they{background-image:url('assets/owner-they-v3.png');background-size:contain;background-position:center;background-repeat:no-repeat}
+.mobile-owner-art{display:none}
