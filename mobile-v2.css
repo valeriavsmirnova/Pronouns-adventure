@@ -52,4 +52,5 @@
   .story-meadow .pronoun-choice[data-choice="they"]:after{content:none!important}
   .story-meadow .pronoun-choice[data-choice="they"] b{display:block!important;z-index:100!important;bottom:2px!important}
   .story-meadow .mobile-story-they-label{display:none!important}
+  .story-meadow .they-visible-label{position:absolute!important;z-index:1000!important;bottom:2px!important;left:50%!important;display:block!important;padding:0 6px!important;transform:translateX(-50%)!important;border-radius:99px!important;background:#7548b1!important;color:#fff!important;font:800 11px 'Baloo 2'!important;line-height:18px!important}
 }
