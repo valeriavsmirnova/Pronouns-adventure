@@ -9,6 +9,9 @@
       image.src = 'assets/owner-they-v3.png';
       image.alt = '';
       slot.append(image);
+      const card = slot.closest('.pronoun-choice');
+      card.style.setProperty('transform', 'translateY(-24px)', 'important');
+      card.style.setProperty('z-index', '6', 'important');
     });
   };
 
