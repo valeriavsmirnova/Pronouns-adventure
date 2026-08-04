@@ -7,6 +7,11 @@
   #homeScreen .adventure-card{width:min(86vw,340px);left:50%;transform:translateX(-50%);border-radius:20px}.adventure-card .mission-banner{font-size:13px;padding:7px}.mission-art{height:138px}.adventure-card h2{font-size:22px}.adventure-card .game-type{font-size:11px}.adventure-card p{min-height:auto;font-size:11px;line-height:1.3}.adventure-card .grammar{min-height:auto;font-size:10px;padding-bottom:4px}.card-actions button{min-height:44px;font-size:11px}
   #homeScreen .map-card-one{top:2%}#homeScreen .map-card-two{top:29%}#homeScreen .map-card-three{top:56%}
   #homeScreen .route-step{left:4%;width:42px;height:42px;font-size:23px}.route-step.one{top:3%}.route-step.two{top:30%}.route-step.three{top:57%}.route-step.four{top:81%;right:auto}
+  #homeScreen .map > .route-step{left:4%!important}
+  #homeScreen .map > .route-step.one{top:3%!important}
+  #homeScreen .map > .route-step.two{top:30%!important}
+  #homeScreen .map > .route-step.three{top:57%!important}
+  #homeScreen .map > .route-step.four{top:81%!important;right:auto!important}
   #homeScreen .finish-card{top:80%;right:auto;bottom:auto;left:50%;width:min(82vw,320px);transform:translateX(-50%);padding:13px}.finish-card:before{font-size:13px}.finish-card p{font-size:10px}.finish-card button{min-height:44px;font-size:11px}
   .welcome{left:102px!important;bottom:83px!important;width:170px;font-size:10px}.welcome:before{left:-112px!important;width:146px!important;height:190px!important}
   .progress-bar{width:100%;height:64px;border-width:3px;border-radius:15px 15px 0 0;justify-content:space-evenly}.progress-bar>div{min-width:0;width:27%;font-size:14px}.progress{width:31%!important}.progress span{width:62px;margin:0 2px}.restart-adventure{min-width:66px;padding:7px 5px;font-size:10px}.restart-adventure small{font-size:7px}
