@@ -49,5 +49,4 @@
   .story-meadow .pronoun-choice.story-correct{animation:none!important;transform:none!important}
   .story-meadow .pronoun-choice[data-choice="they"] b{display:none!important}
   .story-meadow .pronoun-choice[data-choice="they"]:after{content:'they';position:absolute;z-index:12;bottom:2px;left:50%;padding:0 6px;transform:translateX(-50%);border-radius:99px;background:#7548b1;color:#fff;font:800 11px 'Baloo 2';line-height:18px}
-  .story-meadow .pronoun-choice[data-choice="they"]:after{content:none!important}
 }
