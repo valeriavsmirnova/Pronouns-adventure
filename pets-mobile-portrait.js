@@ -10,8 +10,8 @@
       image.alt = '';
       slot.append(image);
       const card = slot.closest('.pronoun-choice');
-      card.style.setProperty('transform', 'translateY(-24px)', 'important');
-      card.style.setProperty('z-index', '6', 'important');
+      card.style.setProperty('transform', 'none', 'important');
+      card.style.setProperty('z-index', 'auto', 'important');
     });
   };
 
