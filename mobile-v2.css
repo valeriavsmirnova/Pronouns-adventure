@@ -42,6 +42,6 @@
   /* Use the same framed portrait crop as Mission 2 for the they card. */
   .story-meadow .pronoun-choice span.they{height:55px!important;transform:translateY(9px)!important;background:none!important}
   .story-meadow .mobile-story-they{display:block;width:100%;height:100%;object-fit:contain;object-position:center}
-  .story-meadow .pronoun-choice[data-choice="they"]{position:relative;top:-7px}
+  .story-meadow .pronoun-choice[data-choice="they"]{position:relative;top:-15px}
   .story-meadow .pronoun-choice b{bottom:2px!important}
 }
